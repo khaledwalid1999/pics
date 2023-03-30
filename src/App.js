@@ -1,8 +1,13 @@
 import SearchBar from "./components/SearchBar";
+import searchImages from "./api";
+import { useState } from "react";
 
 function App() {
+  const [images, setImages] = useState({});
+
   const handleSubmit = (term) => {
-    console.log("search" + term);
+    setImages(searchImages(term));
+    console.log(images);
   };
 
   return (

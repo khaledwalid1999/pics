@@ -1,5 +1,7 @@
+import ImageShow from "./ImageShow";
+
 function ImageList() {
-  return <div>ImageList</div>;
+  return <div></div>;
 }
 
 export default ImageList;
