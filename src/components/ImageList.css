@@ -2,10 +2,12 @@
     columns:4 200px;
     column-gap: 10px;
     padding:0px 100px;
+
 }
 
 img{
     width: 100%;
-    border-radius: 10px;
     border:2px solid lightgray;
+    border-radius: 10px;
 }
+

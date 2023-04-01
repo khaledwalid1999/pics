@@ -5,7 +5,7 @@ function SearchBar({ onSubmit }) {
   const [term, setTerm] = useState("");
 
   const handleSearchOnChange = (event) => {
-    setTerm(event.target.value);
+     setTerm(event.target.value);
   };
 
   const handleFormSubmit = (event) => {
@@ -14,7 +14,7 @@ function SearchBar({ onSubmit }) {
   };
 
   return (
-    <div className="search-bar">
+    <div className='search-bar'>
       <form onSubmit={handleFormSubmit}>
         <label>Enter Search Term</label>
         <input value={term} onChange={handleSearchOnChange} />
