@@ -5,12 +5,12 @@ function SearchBar({ onSubmit }) {
   const [term, setTerm] = useState("");
 
   const handleSearchOnChange = (event) => {
-     setTerm(event.target.value);
+    setTerm(event.target.value);
   };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    onSubmit(term);
+    onSubmit(term.trim());
   };
 
   return (
